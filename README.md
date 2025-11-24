@@ -50,5 +50,50 @@ Pipeline:
 
 ---
 
-## 📂 Project Structure
+## 🛠️ Technologies Used
+
+| Component | Technology |
+|----------|------------|
+| LLM | OpenAI GPT-3.5 / GPT-4 |
+| Framework | LangChain |
+| Embeddings | OpenAIEmbeddings |
+| Vector DB | DocArray, Pinecone |
+| STT | OpenAI Whisper |
+| Retrieval | Semantic Search, cosine similarity |
+| Languages | Python |
+| Tools | pytube, sklearn, json, dotenv |
+
+---
+
+## 🧠 How It Works (High-Level Flow)
+
+1. **Audio → Text**  
+   Convert YouTube videos to text via Whisper.
+
+2. **Text Processing**  
+   Clean, split, and prepare documents for indexing.
+
+3. **Embedding + Indexing**  
+   Store text embeddings in DocArray or Pinecone.
+
+4. **Query Handling**  
+   Convert user input to embeddings.
+
+5. **Semantic Retrieval**  
+   Fetch top-k relevant chunks using vector search.
+
+6. **LLM Response Generation**  
+   Pass context + question through an LLM chain → accurate answer.
+
+---
+
+## 📌 Use Cases
+
+✔ Creating personal AI assistants  
+✔ RAG systems for long audio/video content  
+✔ YouTube lecture summarization  
+✔ Custom knowledge base question-answering  
+✔ Semantic search engine prototypes  
+
+---
 
